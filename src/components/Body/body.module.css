@@ -1,0 +1,30 @@
+.container{
+    margin: 0 auto;
+    max-width: 1240px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.container .girl{
+    height: 300px;
+}
+@media screen and (max-width:1024px) {
+    .container{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .container .girl{
+        height: 250px;
+    }
+}
+@media screen and (max-width:740px) {
+    .container{
+        justify-content: center;
+        padding: 0 10px;
+    }
+    .container .girl{
+        display: none;
+    }
+}

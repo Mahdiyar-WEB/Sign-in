@@ -1,0 +1,121 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 1px solid #86D4D4;
+    background-color: #F6FFFF;
+}
+.dark{
+    background-color: #002F2F !important;
+    color: #AEEEEE !important;
+}
+.container h2{
+    margin: 0 auto;
+    color: #015959;
+}
+.container input[type="checkbox"]:nth-last-of-type(1){
+    margin-left: 3px;
+    margin-right: 5px;
+}
+.captcha{
+    border: 1px solid #86D4D4;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.darkCaptcha{
+    background-color: #011616;
+}
+.container button{
+    cursor: pointer;
+    color: #015959;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: linear-gradient(90deg, #6FDFDF 0%, #00A5A5 94.44%);
+}
+.darkBtn{
+    color:#011616 !important;
+}
+.google{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+}
+.google img{
+    cursor: pointer;
+    width: 40px;
+}
+a{
+    font-weight: 600;
+    color: #015959;
+    font-size: .8rem;
+    text-decoration: none;
+    margin: 0 auto;
+}
+.imgcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.imgcontainer label{
+    color: #015959;
+    font-weight: 700;
+}
+.input{
+    width: 100%;
+    position: relative;
+    outline: none;
+    padding: 12px 15px 12px 45px ;
+    border: solid 2px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(#F6FFFF, #F6FFFF), 
+                      linear-gradient(to right, #6BDDDD, #00A5A5);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+.darkInp{
+    color: #ffff;
+    width: 100%;
+    position: relative;
+    outline: none;
+    padding: 12px 15px 12px 45px ;
+    border: solid 2px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(#002F2F, #002F2F), 
+                      linear-gradient(to right, #6BDDDD, #00A5A5);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    
+}
+.input:focus{
+    background-image: linear-gradient(#fff, #fff), 
+    linear-gradient(to right, #6BDDDD, #00A5A5);
+}
+.innerImg{
+    width: 25px;
+    position: absolute;
+    left: 10px;
+    top :35px;
+}
+.innerImg2{
+    cursor: pointer;
+    width: 25px;
+    position: absolute;
+    right: 10px;
+    top :35px;
+}
+@media screen and (max-width:1024px) {
+    .container{
+        width: 100%;
+    }
+}
